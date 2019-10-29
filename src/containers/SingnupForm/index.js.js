@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import './styles.css'
-import UsernameComponent from './UsernameComponent'
+import UsernameComponent from './components/Username/UsernameComponent'
 
 class SignupForm extends PureComponent {
   constructor(props) {
@@ -21,7 +21,7 @@ class SignupForm extends PureComponent {
   }
 
   render() {
-    const {username, password, isButtonVisible} = this.state
+    const {username, isButtonVisible} = this.state
     return (
      <div className='container'>
        <UsernameComponent username={username} dugmence={isButtonVisible} />
